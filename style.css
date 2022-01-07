@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap');
+/*@-moz-document url-prefix() {
+        .no-scrollbar {
+            scrollbar-width: none;
+            padding-right: -17px;
+            box-sizing: content-box;
+            overflow-y: scroll;
+        }
+    }
+*/
+
+html {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Epilogue, sans-serif;
+    font-size: 1rem;
+    max-width: 100%;
+    
+    /*background-color: #f0a500;  */   
+}
+
+/*::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+}*/
+
+/* INI MILIK INDEX YANG BARU */
+
+.jumbotron {
+    background-color: #f0a500;
+    position: relative;
+    border-radius: 0;
+}
+
+.heading-1 {
+    z-index: 1;
+    position: absolute;
+    padding-top: 45vh;
+    padding-left: 5vw;
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.heading-2 {
+    z-index: 0;
+    padding-top: 8vh;
+    font-weight: 200;
+    font-size: 20rem;
+    color: #565050;
+    opacity: 0.69;
+    letter-spacing: -0.1em;
+}
+
+.home-content {
+    display: flex;
+}
+
+.content {
+    display: block;
+    padding: 20vh 10vw;
+}
+.content h2 {
+    font-weight: 700;
+}
+.intro, .about-1, .about-2, .about-3, .about-4 {
+    height: 100vh;
+}
+
+.button {
+    padding-right: 1.69vw;
+}
+.btn-primary {
+    background-color: #334756;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 300ms ease;
+}
+.btn-primary:hover {
+    background-color: #082032;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 300ms ease;
+}
+
+h4.quote {
+    font-style: italic;
+    text-align: center;
+}
+
+hr.new1 {
+    background-color: #082032;
+    height: 2px;
+}
+
+/*CSS FOR ART PICTURES*/
+.art-pictures {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+
+.mobile-sidebar {
+    display: none;
+}
+
+    
+@media screen and (max-width: 992px) {
+    .mobile-hide {
+        display: none;
+    }
+    .mobile-sidebar {
+        display: flex;
+        text-align: center;
+        padding: 2vh;
+        flex-direction: column;
+        box-sizing: content-box;
+        height: 10vh;
+        color: #565050;
+    }
+    
+}
+
+
+.sidebar {
+    display: flex;
+    padding-top: 18vh;
+    flex-direction: column;
+    box-sizing: content-box;
+    height: 100vh;
+    color: #565050;
+}
+.nav-item {
+    transition: font-size;
+    transition: font-weight;
+    transition: letter-spacing;
+}
+.nav-item a {
+    color: #565050 !important;
+    line-height: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    letter-spacing: -0.01em;
+    transition: 500ms ease;
+}
+.nav-item > a:hover {
+    font-weight: 700;
+    font-size: 3.8rem;
+    letter-spacing: 0.1em;
+    transition: 500ms ease;
+}
+.active {
+    font-weight: 600 !important;
+    font-size: 4.5rem !important;
+    letter-spacing: -0.03em !important;
+}
+.sub-nav-item {
+    display: flex;
+    flex-direction: column;
+    transition: font-size;
+    transition: font-weight;
+    transition: letter-spacing;
+}
+.sub-nav-item a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 2rem;
+    font-weight: 500;
+    padding-left: 3vw;
+    letter-spacing: 0.1em;
+    transition: 500ms ease;
+}
+.sub-nav-item > a:hover {
+    font-weight: 600;
+    font-size: 2.2rem;
+    letter-spacing: 0.2em;
+    transition: 500ms ease;
+}
+
+
+.footer {
+    display: flex;
+    padding: 5vh 9vw;
+    background-color: #082032;
+    letter-spacing: -0.01em;
+    justify-content: space-between;
+}
+
+
+
+/* YANG DI BAWAH INI MILIK INDEX YANG ORI */
+/*
+.sidenavbar {
+    display: block;
+    
+    
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    width: 10%;
+    float: right;
+    height: 100vh;
+    color: #565050;
+
+    background-color: #f0a500;
+    
+}
+
+.text-logo {
+    display: flex;
+    padding-top: 20%;
+    padding-left: 20%;
+    padding-bottom: 32vh;
+}
+
+.nav-item {
+    display: flex;
+    padding-left: 10%;
+    line-height: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: -0.015em;
+}
+
+.sidenavbar a {
+    color: #565050 !important;
+}
+
+.welcome-images {
+    position: relative;
+    padding: 0;
+    background-repeat: no-repeat;
+    
+}
+
+.about {
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    box-sizing: content-box;
+    padding-top: 175vh;
+    padding-left: 3rem;
+    padding-right: 30rem;
+    letter-spacing: -0.015em;
+    line-height: 0px;
+    color: white;
+}
+
+.welcome-h1 {
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    box-sizing: content-box;
+    padding-top: 75vh;
+    padding-left: 3rem;
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: -0.015em;
+    line-height: 0px;
+    color: white;
+}
+
+.welcome-p {
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    box-sizing: content-box;
+    font-size: 40px;
+    padding-top: 86vh;
+    padding-left: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 0px;
+    color: white;
+}
+
+.welcome-images {
+    display: flex;
+    position: absolute;
+    left: 0; top: 0;
+    z-index: -1;
+    width: 100%;
+}*/
